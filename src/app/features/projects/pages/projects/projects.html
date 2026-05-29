@@ -1,9 +1,12 @@
 <p>projects works!</p>
 
-TOKEN: {{token}}
 
-<button (click)="recuperarToken()">Token</button>
+<ul>
+    @for(p of projectsData(); track p){
+    <li>
+       {{ p.name}}
+    </li>
+    }
+</ul>
 
-
-
-
+<button (click)="projects()">Proyectos</button>
